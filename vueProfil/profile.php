@@ -1,6 +1,6 @@
 <?php
 include('../include/functions.php') ;
-require_once '../include/database.php';
+require_once '../include/pdoConnect.php';
 include ('../actions/users/profileAction.php');
 logged_only();
 ?>
@@ -11,7 +11,7 @@ logged_only();
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Human Heart | Profile</title>
+    <title>Boutique | Profile</title>
     <meta content="ONG de solidarité internationale qui vise à alléger les souffrances des populations les plus pauvres du monde." name="description">
     <meta content="aide humanitaire, ong, human heart" name="keywords">
 
@@ -28,6 +28,7 @@ logged_only();
 
     <!-- Template Main CSS File -->
     <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/dev-style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -38,7 +39,7 @@ logged_only();
     <img src="../assets/img/iconfav.jpg" alt="icon Human-Heart" class="logoD">
     <a href="#" class="logo d-flex align-items-center">
 
-      <span class="d-none d-lg-block">Human-Heart</span>
+      <span class="d-none d-lg-block">Boutique</span>
     </a>
     <i class="bi bi-list toggle-sidebar-btn"></i>
   </div><!-- End Logo -->

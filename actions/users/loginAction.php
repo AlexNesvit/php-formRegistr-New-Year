@@ -11,7 +11,7 @@ $PDO = PdoConnect::getInstance();
         
         $userPassPost = $_POST['password'];
         $userPass = $user->password;
-        die();
+        
         if ($user) {
             if (password_verify($userPassPost , $userPass)) {
                 session_start();
