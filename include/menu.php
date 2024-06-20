@@ -1,11 +1,13 @@
 <div class="flag-container">
     <img src="assets/img/ukraine_flag.jpg" alt="Drapaux Ukraine">
 </div>
+
 <div class="main container">
     <header class="mb-4">
         <button class="btn btn-primary d-lg-none" id="mobileMenuOpenButton">
             <i class="fas fa-bars"></i>
         </button>
+
         <nav id="menu" class="d-none d-lg-flex flex-wrap justify-content-around">
             <span>
                 <a href="index.php" class="menu-item">Accueil</a>
@@ -31,4 +33,5 @@
                 <?php endif; ?>
             </span>
         </nav>
+    </header>
 </div>
