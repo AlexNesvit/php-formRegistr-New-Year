@@ -1,6 +1,6 @@
 <?php
 include('../../include/functions.php');
-require_once '../../include/database.php';
+require_once '../../include/pdoConnect.php';
 include('../../actions/admin/donCrud/adminDonCreate.php');
 
 logged_only();
@@ -12,7 +12,7 @@ logged_only();
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Human Heart | Administration</title>
+    <title>Boutique | Administration</title>
     <meta content="ONG de solidarité internationale qui vise à alléger les souffrances des populations les plus pauvres du monde." name="description">
     <meta content="aide humanitaire, ong, human heart" name="keywords">
 
@@ -39,14 +39,10 @@ logged_only();
         <img src="../../assets/img/iconfav.jpg" alt="icon Human-Heart" class="logoD">
         <a href="../../dashboard.php" class="logo d-flex align-items-center">
 
-            <span class="d-none d-lg-block">Human-Heart</span>
+            <span class="d-none d-lg-block">Boutique</span>
         </a>
         <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
-
-
-
-
 
 </header><!-- End Header -->
 
@@ -72,7 +68,7 @@ logged_only();
         <li class="nav-item">
             <a class="nav-link collapsed" href="">
                 <i class="bi bi-collection-fill"></i>
-                <span>Dons</span>
+                <span>Achats</span>
             </a>
         </li>
 
@@ -103,7 +99,7 @@ logged_only();
 <main id="main" class="main">
 
     <div class="pagetitle">
-        <h1>Gestion des dons</h1>
+        <h1>Gestion des achats</h1>
     </div><!-- End Page Title -->
     <?php if (isset($_SESSION['flash'])) : ?>
         <?php foreach ($_SESSION['flash'] as $type => $message) : ?>
@@ -152,7 +148,7 @@ logged_only();
 
                     <div class="text-center">
                         <button type="submit" class="btn btn-primary" name="validate">Enregistrer
-                            le don</button>
+                            l'achats</button>
 
                     </div>
                 </form>

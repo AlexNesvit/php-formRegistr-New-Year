@@ -69,7 +69,7 @@ session_start();
       <li class="nav-item">
         <a class="nav-link collapsed" href="vueDashboard/dashboardDon.php">
           <i class="bi bi-collection-fill"></i>
-          <span>Dons</span>
+          <span>Achats</span>
         </a>
       </li>
 

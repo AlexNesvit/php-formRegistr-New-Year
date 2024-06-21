@@ -11,7 +11,7 @@ logged_only();
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Human Heart | Administration</title>
+    <title>Boutique | Administration</title>
     <meta content="ONG de solidarité internationale qui vise à alléger les souffrances des populations les plus pauvres du monde." name="description">
     <meta content="aide humanitaire, ong, human heart" name="keywords">
 

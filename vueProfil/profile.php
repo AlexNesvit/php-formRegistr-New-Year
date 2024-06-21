@@ -68,7 +68,7 @@ logged_only();
     <li class="nav-item">
       <a class="nav-link collapsed" href="profileDonation.php">
         <i class="bi bi-cash"></i>
-        <span>Mon historique de dons</span>
+        <span>Mon historique d'achats</span>
       </a>
     </li>
 
