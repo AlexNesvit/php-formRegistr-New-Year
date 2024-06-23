@@ -44,7 +44,7 @@ body {
     display: none; /* По умолчанию скрыто на мобильных устройствах */
     flex-direction: column; /* Вертикальное расположение элементов */
     align-items: center;
-    background-color: #f8f9fa; /* Цвет фона */
+    background-color: transparent; /* Цвет фона */
 }
 
 #menu.show {
