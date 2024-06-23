@@ -1,6 +1,6 @@
 <?php
 include('../../include/functions.php');
-require_once '../../include/database.php';
+require_once '../../include/pdoConnect.php';
 include('../../actions/admin/userCrud/adminUserCreate.php');
 logged_only();
 ?>

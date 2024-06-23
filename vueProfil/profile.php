@@ -36,8 +36,8 @@ logged_only();
 <header id="header" class="header fixed-top d-flex align-items-center">
 
   <div class="d-flex align-items-center justify-content-between">
-    <img src="../assets/img/iconfav.jpg" alt="icon Human-Heart" class="logoD">
-    <a href="#" class="logo d-flex align-items-center">
+    <!-- <img src="../assets/img/iconfav.jpg" alt="icon Human-Heart" class="logoD">
+    <a href="#" class="logo d-flex align-items-center"> -->
 
       <span class="d-none d-lg-block">Boutique</span>
     </a>
@@ -57,7 +57,7 @@ logged_only();
         <span>Accueil</span>
       </a>
     </li>
-
+    
     <li class="nav-item">
       <a class="nav-link collapsed" href="profile.php">
         <i class="bi bi-person"></i>

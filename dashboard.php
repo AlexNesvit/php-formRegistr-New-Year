@@ -33,8 +33,8 @@ session_start();
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <img src="assets/img/iconfav.jpg" alt="icon Human-Heart" class="logoD">
-      <a href="dashboard.php" class="logo d-flex align-items-center">
+      <!-- <img src="assets/img/iconfav.jpg" alt="icon Human-Heart" class="logoD">
+      <a href="dashboard.php" class="logo d-flex align-items-center"> -->
      
         <span class="d-none d-lg-block">Boutique</span>
       </a>
@@ -53,7 +53,7 @@ session_start();
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="dashboard.php">
+        <a class="nav-link collapsed" href="index.php">
           <i class="bi bi-house-heart"></i>
           <span>Accueil</span>
         </a>

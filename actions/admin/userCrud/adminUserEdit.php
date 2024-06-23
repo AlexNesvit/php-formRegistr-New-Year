@@ -3,7 +3,7 @@
 session_start();
 require_once '../include/pdoConnect.php';
 $user_id = $_GET['id'];
-$reqUser = $pdo->prepare('SELECT * FROM users WHERE id = ?');
+$reqUser = $PDO->prepare('SELECT * FROM users WHERE id = ?');
 $reqUser->execute([$user_id]);
 $user = $reqUser->fetch();
 
