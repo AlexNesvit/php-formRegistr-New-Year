@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once '../include/database.php';
+require_once '../include/pdoConnect.php';
 // liste tous les utilisateurs du site
 $req = $pdo->prepare('SELECT * FROM users');
 $req->execute();

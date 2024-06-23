@@ -1,6 +1,6 @@
 <?php
 session_start();
-include ('../../../include/database.php');
+include ('../../../include/pdoConnect.php');
 $user_id = $_GET['id'];
 
 $pdo->prepare('DELETE FROM users WHERE id = ?')->execute([$user_id]);

@@ -1,6 +1,6 @@
 <?php
 include('../include/functions.php') ;
-require_once '../include/database.php';
+require_once '../include/pdoConnect.php';
 include ('../actions/admin/categoryCrud/adminCategoryList.php');
 logged_only();
 ?>
@@ -11,7 +11,7 @@ logged_only();
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Human Heart | Administration</title>
+    <title>Boutique | Administration</title>
     <meta content="ONG de solidarité internationale qui vise à alléger les souffrances des populations les plus pauvres du monde." name="description">
     <meta content="aide humanitaire, ong, human heart" name="keywords">
 
@@ -38,7 +38,7 @@ logged_only();
         <img src="../assets/img/iconfav.jpg" alt="icon Human-Heart" class="logoD">
         <a href="../dashboard.php" class="logo d-flex align-items-center">
 
-            <span class="d-none d-lg-block">Human-Heart</span>
+            <span class="d-none d-lg-block">Boutiqie</span>
         </a>
         <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -71,7 +71,7 @@ logged_only();
         <li class="nav-item">
             <a class="nav-link collapsed" href="dashboardDon.php">
                 <i class="bi bi-collection-fill"></i>
-                <span>Dons</span>
+                <span>Achats</span>
             </a>
         </li>
 

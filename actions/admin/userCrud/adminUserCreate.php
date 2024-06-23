@@ -4,7 +4,7 @@ session_start();
 if (isset($_POST['validate'])) {
 
     $errors = array();
-    require_once '../../include/database.php'; //appel du fichier relationnel de la base de données
+    require_once '../../include/pdoConnect.php'; //appel du fichier relationnel de la base de données
 
     //nom d'utilisateur conditions et implémentation dans la base de données
     if (empty($_POST['name']) || !preg_match('/^[a-zA-Z0-9_]+$/', $_POST['name'])) {
