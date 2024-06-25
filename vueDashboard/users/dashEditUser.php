@@ -3,6 +3,7 @@ include('../include/functions.php');
 require_once '../include/pdoConnect.php';
 include('../actions/admin/userCrud/adminUserEdit.php');
 logged_only();
+$PDO = PdoConnect::getInstance();
 ?>
 <!DOCTYPE html>
 <html lang="fr">

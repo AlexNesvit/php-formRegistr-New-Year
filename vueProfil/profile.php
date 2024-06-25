@@ -3,6 +3,7 @@ include('../include/functions.php') ;
 require_once '../include/pdoConnect.php';
 include ('../actions/users/profileAction.php');
 logged_only();
+$PDO = PdoConnect::getInstance();
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -27,7 +28,7 @@ logged_only();
     <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="../assets/css/style.css" rel="stylesheet">
+    <!-- <link href="../assets/css/style.css" rel="stylesheet"> -->
     <link href="../assets/css/dev-style.css" rel="stylesheet">
 </head>
 
@@ -114,7 +115,7 @@ logged_only();
           <div class="card">
             <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
                 <p class="h2">Bonjour</p>
-              <h2><?=  $_SESSION['auth']->name; ?> <?=  $_SESSION['auth']->username; ?></h2>
+              <h2><?=  $_SESSION['auth']['name']; ?> <?=  $_SESSION['auth']->username; ?></h2>
 
             </div>
           </div>

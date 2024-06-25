@@ -24,7 +24,7 @@ require 'actions/users/registerAction.php';
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- <link href="assets/css/style.css" rel="stylesheet"> -->
     <link href="assets/css/dev-style.css" rel="stylesheet">
 </head>
 <body>

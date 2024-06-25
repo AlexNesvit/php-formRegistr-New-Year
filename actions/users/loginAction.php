@@ -7,7 +7,10 @@ $PDO = PdoConnect::getInstance();
         
         $req = $PDO->prepare('SELECT * FROM users WHERE (username = :username OR email = :username)');
         $req->execute(['username' => $_POST['username']]);
-        $user = $req->fetchObject();
+        //$user = $req->fetchObject();
+        //$user = $req->fetchAll(PDO::FETCH_OBJ); 
+        $user = $req->fetchAll(PDO::FETCH_ASSOC);
+       
         
         $userPassPost = $_POST['password'];
         $userPass = $user->password;
@@ -17,6 +20,8 @@ $PDO = PdoConnect::getInstance();
                 session_start();
                 $_SESSION['auth'] = $user;
 
+    
+                
                 if($user->role == 0){
                     $_SESSION['flash']['success'] = "Vous êtes bien connecté";
                     header('Location: vueProfil/profile.php');

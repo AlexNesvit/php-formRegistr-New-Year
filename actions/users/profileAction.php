@@ -1,5 +1,6 @@
 <?php
 session_start();
+$PDO = PdoConnect::getInstance();
 //permet la moditification du mot de passe en vérifiant les différentes conditions
 if (isset($_POST['validatePass'])){
     if (!empty($_POST)) {

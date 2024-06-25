@@ -1,11 +1,12 @@
 <?php
 
 session_start();
+$PDO = PdoConnect::getInstance();
 require_once '../include/pdoConnect.php';
 $user_id = $_GET['id'];
 $reqUser = $PDO->prepare('SELECT * FROM users WHERE id = ?');
 $reqUser->execute([$user_id]);
-$user = $reqUser->fetch();
+$user = $reqUser->fetchAll(PDO::FETCH_OBJ);
 
 //permet la moditification du modification des informations de profil
 if (isset($_POST['validateProfil'])) {

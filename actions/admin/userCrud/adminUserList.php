@@ -6,4 +6,4 @@ $PDO = PdoConnect::getInstance();
 // liste tous les utilisateurs du site
 $req = $PDO->prepare('SELECT * FROM users');
 $req->execute();
-$allUsers = $req->fetchAll();
+$allUsers = $req->fetchAll(PDO::FETCH_OBJ);
